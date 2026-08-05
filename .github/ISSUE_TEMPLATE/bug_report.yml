@@ -1,0 +1,39 @@
+name: Bug report
+description: Report reproducible behavior that does not work as intended.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: checkboxes
+    attributes:
+      label: Preflight
+      options:
+        - label: I searched existing issues and removed private knowledge, credentials, and machine paths from this report.
+          required: true
+  - type: input
+    attributes:
+      label: Version
+      placeholder: v0.1.0 or commit hash
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Operating system
+      options: [Windows, macOS, Linux, Other]
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Include the expected result and the actual result.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduction
+      description: Provide the smallest safe sequence that reproduces the issue.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Relevant logs
+      render: shell

@@ -1,0 +1,7 @@
+interface:
+  display_name: "每日一题"
+  short_description: "每天筛选并推荐一个值得深入讨论的 AI 与产品高价值交叉议题"
+  default_prompt: "Use $recommend-daily-topic to propose the highest-value AI and product topic for today."
+
+policy:
+  allow_implicit_invocation: true

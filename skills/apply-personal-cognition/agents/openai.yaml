@@ -1,0 +1,7 @@
+interface:
+  display_name: "调用个人认知"
+  short_description: "在 AI 与产品相关工作中主动检索、提示并应用已有个人认知"
+  default_prompt: "Use $apply-personal-cognition to apply my prior cognition to this task."
+
+policy:
+  allow_implicit_invocation: true

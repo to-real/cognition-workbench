@@ -1,0 +1,13 @@
+{
+  "timezone": "UTC",
+  "dailyTopicLimit": 1,
+  "topLevelCategories": [
+    "AI 技术",
+    "产品设计",
+    "商业竞争",
+    "组织与执行",
+    "行业与社会"
+  ],
+  "defaultSearchLimit": 5,
+  "formalWriteRequiresConfirmation": true
+}

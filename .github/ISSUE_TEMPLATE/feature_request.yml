@@ -1,0 +1,21 @@
+name: Feature request
+description: Propose a focused improvement to the cognition workflow.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    attributes:
+      label: Problem
+      description: What cognition or workflow problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposed outcome
+      description: Describe the user-visible result, not only an implementation.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Constraints and alternatives
+      description: Note effects on local-first storage, provenance, review-before-write, and complexity.

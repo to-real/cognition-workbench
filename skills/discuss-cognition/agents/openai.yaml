@@ -1,0 +1,7 @@
+interface:
+  display_name: "认知讨论台"
+  short_description: "分步引导 AI 与产品议题讨论，形成可复用的个人判断与认知沉淀"
+  default_prompt: "Use $discuss-cognition to explore an AI or product topic one branch at a time."
+
+policy:
+  allow_implicit_invocation: true

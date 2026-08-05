@@ -1,0 +1,41 @@
+{
+  "name": "cognition-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A local-first cognition system for guided discussion, durable knowledge, and contextual recall in Codex.",
+  "license": "MIT",
+  "author": "Cognition Workbench contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/to-real/cognition-workbench.git"
+  },
+  "bugs": {
+    "url": "https://github.com/to-real/cognition-workbench/issues"
+  },
+  "homepage": "https://github.com/to-real/cognition-workbench#readme",
+  "keywords": [
+    "codex",
+    "mcp",
+    "knowledge-management",
+    "personal-knowledge-base",
+    "guided-learning"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:unit": "node --test tests/store.test.mjs tests/updates.test.mjs",
+    "test:integration": "node --test tests/mcp.test.mjs",
+    "install:codex": "node scripts/install.mjs",
+    "install:dry-run": "node scripts/install.mjs --dry-run",
+    "validate:release": "node scripts/validate-release.mjs",
+    "check": "npm run validate:release && npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "yaml": "^2.0.0",
+    "zod": "^3.25.0"
+  }
+}
